@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+  namespace: webapp
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Argo Rollouts + CD</title></head>
+    <body>
+      <h1>Welkom op de NGINX site via Argo CD!</h1>
+    </body>
+    </html>
